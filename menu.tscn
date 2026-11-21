@@ -1,0 +1,105 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_menu"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainButtons" type="VBoxContainer" parent="Center"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Center/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Frog Spy"
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="Center/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Play"
+
+[node name="ViewLevel" type="Button" parent="Center/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "View Level"
+
+[node name="Settings" type="Button" parent="Center/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
+[node name="Settings" type="VBoxContainer" parent="Center"]
+visible = false
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Master" type="VBoxContainer" parent="Center/Settings"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Center/Settings/Master"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Overall Volume"
+
+[node name="Slider" type="HSlider" parent="Center/Settings/Master"]
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+value = 10.0
+tick_count = 10
+ticks_on_borders = true
+
+[node name="Music" type="VBoxContainer" parent="Center/Settings"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Center/Settings/Music"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Music"
+
+[node name="Slider" type="HSlider" parent="Center/Settings/Music"]
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+value = 10.0
+tick_count = 10
+ticks_on_borders = true
+
+[node name="SFX" type="VBoxContainer" parent="Center/Settings"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Center/Settings/SFX"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Sound FX"
+
+[node name="Slider" type="HSlider" parent="Center/Settings/SFX"]
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+value = 10.0
+tick_count = 10
+ticks_on_borders = true
+
+[node name="Back" type="Button" parent="Center/Settings"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Back"

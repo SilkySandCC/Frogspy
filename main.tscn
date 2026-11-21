@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://main.gd" id="1_main"]
+[ext_resource type="Texture2D" path="res://drawing.svg" id="2_art"]
+[ext_resource type="Script" path="res://frog.gd" id="3_frog"]
+
+[sub_resource type="CircleShape2D" id="frog_shape"]
+radius = 45.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Drawing" type="Sprite2D" parent="."]
+texture = ExtResource("2_art")
+centered = false
+
+[node name="Frogs" type="Node2D" parent="."]
+
+[node name="Frog1" type="Area2D" parent="Frogs" groups=["frogs"]]
+position = Vector2(400, 290)
+script = ExtResource("3_frog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frogs/Frog1"]
+shape = SubResource("frog_shape")
+
+[node name="Frog2" type="Area2D" parent="Frogs" groups=["frogs"]]
+position = Vector2(1800, 1190)
+script = ExtResource("3_frog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frogs/Frog2"]
+shape = SubResource("frog_shape")
+
+[node name="Frog3" type="Area2D" parent="Frogs" groups=["frogs"]]
+position = Vector2(2600, 490)
+script = ExtResource("3_frog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frogs/Frog3"]
+shape = SubResource("frog_shape")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="UI"]
+offset_left = 16.0
+offset_top = 16.0
+theme_override_font_sizes/font_size = 32

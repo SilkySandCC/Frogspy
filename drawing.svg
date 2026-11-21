@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2000">
+  <!-- Placeholder art: swap for your real drawing (same name, or update main.tscn). -->
+  <rect width="3000" height="2000" fill="#7fb8d6"/>
+  <ellipse cx="1500" cy="1700" rx="1700" ry="450" fill="#5d9c4a"/>
+  <g fill="#3f7d3a">
+    <ellipse cx="700" cy="900" rx="160" ry="60"/>
+    <ellipse cx="1300" cy="600" rx="140" ry="50"/>
+    <ellipse cx="2200" cy="1000" rx="180" ry="65"/>
+    <ellipse cx="2500" cy="1500" rx="150" ry="55"/>
+  </g>
+  <!-- Frogs: positions must match the hotspots in main.tscn -->
+  <g id="frog" fill="#2e8b2e">
+    <ellipse cx="400" cy="300" rx="35" ry="25"/>
+    <circle cx="388" cy="278" r="9"/><circle cx="412" cy="278" r="9"/>
+  </g>
+  <use href="#frog" x="1400" y="900"/>
+  <use href="#frog" x="2200" y="200"/>
+</svg>
