@@ -1,0 +1,6 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1795136595
+drawing.svg::CompressedTexture2D::4440969093358587033::1795136031::1795136595::1::::<><><>0<>0<>6b376b22fb428f82967dbdd2629ff4ae<>res://.godot/imported/drawing.svg-f3dd40b59c27428c06e8fb1655504bee.ctex::
+frog.gd::GDScript::3208101780733346717::1795136034::0::1::::<>Area2D<><>0<>0<><>::
+main.gd::GDScript::4893027120121591054::1795136040::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::-1::1795136044::0::1::::<><><>0<>0<><>::res://main.gd<>res://drawing.svg<>res://frog.gd
